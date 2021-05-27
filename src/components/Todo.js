@@ -68,10 +68,6 @@ const Todo = () => {
     }
 
 
-    const RemoveAll = () =>{
-        setListData([]);
-    }
-
    const handleKeyPress = (event) =>{
         if(event.key === 'Enter'){
             {addItem()}
@@ -101,7 +97,7 @@ const Todo = () => {
                             toggleSubmit ?  <i className="fa fa-plus add-btn" title="Add Item"
                             onClick={addItem}> </i> : <i className="fa fa-edit add-btn" title="Edit Item" onClick={addItem}> </i>
                         }
-                        {/* <img src={EditIcon} className="edit-btn" title="Edit Item" onClick={addItem}/> */}
+                      
                         
                         
                     </div>
@@ -127,11 +123,11 @@ const Todo = () => {
                        
                     </div>
 
-                    <div className="showItems">
+                    {/* <div className="showItems">
                         <button className="btn effect04" data-sm-link-text="Remove-All"
                         onClick={RemoveAll}
                         ><span>Check List</span></button>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
